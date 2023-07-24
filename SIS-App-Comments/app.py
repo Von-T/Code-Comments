@@ -10,11 +10,6 @@ Form() is just saying that the function should receive a variable with
 the same name as the parameter from a request from an html (html sends
 a special request to REST API called 'form')
 """ 
-from fastapi import FastAPI, Request, Form
-from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse
-from db import *
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
