@@ -36,9 +36,8 @@ def new(request: Request):
     return templates.TemplateResponse("new.html", {"request": request})
 
 """
-Reads an 'id' from the POST request then gets the data for an entry with that specific 'id' and stores it in 
-variable 'data' in the form of a 2D array, in which it gets the info of that row (why is it a for loop; 
-the variables would constantly be overwritten) then sends that info to new.html to do something with it
+Reads an 'id_input' from the POST request then gets the data for an entry with that specific 'id_input' and stores it in 
+variable 'data' in the form of a 2D array, in which it gets the info from the 0th row then sends that info to new.html to do something with it
 """
 @app.post("/edit", response_class=HTMLResponse)
 def edit(request: Request, id_input: str = Form(...)):
