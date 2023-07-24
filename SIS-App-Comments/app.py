@@ -77,6 +77,7 @@ def home(request: Request):
     return templates.TemplateResponse("home.html", {"request": request, "output_data": data})
 
 """
+(This function is not used anywhere as of yet)
 Gets the data for an entry with a specific 'search_input' and stores it in variable 'data',
 then sends it to home.html to render
 """
