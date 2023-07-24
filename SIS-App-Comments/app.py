@@ -88,9 +88,9 @@ def search(request: Request, search_input: str = Form(...)):
 
 """
 Reads name, academic, term, type, val, and id from the POST request, then checks if the user pressed
-cancel, in which it just stops and redirects back to the home menu; otherwise, it checks that the
-fields (on the UI) were filled, makes a request to send that data to HANA, then renders new.html
-with empty fields
+cancel, in which it just stops and redirects back to the new.html (why not home.html?); otherwise, 
+it checks that the fields (on the UI) were filled, makes a request to send that data to HANA, then 
+renders new.html with empty fields
 """
 @app.post("/save", response_class=HTMLResponse)
 def save(
