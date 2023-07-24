@@ -1,12 +1,3 @@
-from wso2 import get_token
-import requests
-import json
-
-def dbconnect():
-    lambda_endpoint = "https://api-qa.ucsd.edu:8243/sis-campus-information-collector/v1"
-    token = get_token()
-    return lambda_endpoint, token
-
 """
 Sends a GET request to SIS API on WS02 to get data from HANA DB
 """
