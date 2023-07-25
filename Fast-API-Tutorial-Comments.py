@@ -1,4 +1,4 @@
-# To run this app, run: python -m uvicorn working:app --reload
+# To run this app, run: python -m uvicorn Fast-API-Tutorial-Comments:app --reload
 # To access the automated documentation that FastAPI creates for your functions, 'localhost:8000/docs'
 
 from fastapi import FastAPI, Path, Query, HTTPException, status, Response
